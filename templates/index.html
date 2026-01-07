@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Temperature Converter</title>
+    </head>
+
+    <body>
+        <h1>Temperature Converter</h1>
+        <!-- form for user's input -->
+        <form method="POST">
+            <input type="text" name="temperature" placeholder="Temperature">
+             <!--dropdown menu -->
+            <select name="scale">
+                <!-- menu options -->
+                <option value="C">Celsius → Fahrenheit</option>
+                <option value="F">Fahrenheit → Celsius</option>
+            </select>
+            <button type="submit">Convert</button>
+        </form>
+        <!--Flask template syntax -->
+        {% if result %}
+            <h2>{{ result }}</h2>
+        {% endif %}
+    </body>
+
+</html>
